@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter John Bahian | Portfolio</title>
+    <link rel="stylesheet" href="alter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="header-visual"></div>
+        
+        <div class="profile-pic-container">
+            <label for="imageUpload">
+                <img src="profile.jpg" alt="Click to change" class="profile-pic" id="profileDisplay">
+                <div class="upload-overlay">Change Photo</div>
+            </label>
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+        </div>
+
+        <div class="content">
+            <h1>Alter John Bahian</h1>
+            <p class="tagline">HUMSS Graduate | Portfolio</p>
+            
+            <hr>
+
+            <div class="section">
+                <h3>Personal Information</h3>
+                <div class="info-grid">
+                    <div class="info-item"><strong>Birthdate:</strong> <span>November 11, 2005</span></div>
+                    <div class="info-item"><strong>Birthplace:</strong> <span>Sawang, Sibutad ZDN.</span></div>
+                    <div class="info-item"><strong>Current Address:</strong> <span>East Pob. Rizal ZDN.</span></div>
+                    <div class="info-item"><strong>Age:</strong> <span>20 Years Old</span></div>
+                    <div class="info-item"><strong>Sex:</strong> <span>Male</span></div>
+                    <div class="info-item"><strong>Status:</strong> <span>Single</span></div>
+                    <div class="info-item"><strong>Hometown:</strong> <span>Sibutad</span></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Accomplishments</h3>
+                <div class="achievement-badge">
+                    <span class="icon">🎓</span>
+                    <div>
+                        <p class="achieve-title">High School Graduate</p>
+                        <p class="achieve-desc">Academic Track: Humanities and Social Sciences (HUMSS)</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script>
+        const imageUpload = document.getElementById('imageUpload');
+        const profileDisplay = document.getElementById('profileDisplay');
+
+        imageUpload.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    profileDisplay.setAttribute('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.profile-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.header-visual {
+    background: #333;
+    height: 100px;
+}
+
+.profile-pic-container {
+    margin-top: -60px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+    background: #ddd;
+}
+
+.content {
+    padding: 25px 35px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+}
+
+.tagline {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 0.85rem;
+    color: #b21f1f;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+/* Personal Data Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item strong {
+    color: #888;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.info-item span {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Achievements */
+.achievement-badge {
+    display: flex;
+    align-items: center;
+    background: #fff5f5;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #fed7d7;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.achieve-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.achieve-desc {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.contact-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-btn:hover {
+    background: #b21f1f;
+}
