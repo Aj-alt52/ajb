@@ -1,0 +1,1 @@
+Alter ni bai gwapo kaau ko sir.
